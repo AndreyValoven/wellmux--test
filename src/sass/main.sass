@@ -2,12 +2,23 @@
 
 @import ../libs/bootstrap-sass/assets/stylesheets/bootstrap 
 // @import ../libs/font-awesome/scss/font-awesome
+$footer: #fcdb00
+
 header
 	background-color: #fcdb00
+	padding-top: 2%
+.navbar-brand
+	font-size: 1.8rem
+	font-weight: bold
+.navbar-header img 
+	width: 6rem
+	height: 6rem
+	margin-top: -4px
 #myNavbar
 	li 
 		font-size: 2rem
 		font-weight: bold
+		margin-left: 50px
 
 .item--info
 	margin-top: 25%
@@ -25,4 +36,62 @@ header
 	li
 		display: inline-block
 		margin: 10% 8% 0
-
+.description
+	margin-top: 10%
+	margin-bottom: 10%
+	text-align: center
+	h2
+		font-weight: bold
+		font-size: 3.5rem
+	p
+		font-size: 2rem
+	&--icon, &--text 
+		display: inline-block
+	&--icon
+		width: 20%
+		vertical-align: top
+		margin-right: 4%
+	&--text 
+		width: 74%
+		h4
+			font-weight: bold
+			font-size: 2.4rem
+		p
+			font-size: 1.4rem
+	&--item
+		margin-bottom: 18%
+footer
+	color: #d4d4d4
+	background-color: #010101
+.keep--in--touch
+	margin-top: 10%
+	text-align: center
+	margin-bottom: 4%
+	h2
+		color: $footer
+		font-weight: bold
+		font-size: 3.5rem
+	p
+		font-size: 2rem
+.links
+	margin-top: 8%
+	margin-bottom: 10%
+	text-align: center
+	ul
+		list-style: none
+	li 
+		display: inline-block
+		margin: 0 1.5%
+		color: $footer
+.contact--info
+	margin-bottom: 8%
+.link--group
+	a 
+		color: #d4d4d4
+input
+	margin-top: 4%
+	&[type=text]
+		text-align: left
+	&[type=submit]
+		text-transform: uppercase
+		font-weight: bold
