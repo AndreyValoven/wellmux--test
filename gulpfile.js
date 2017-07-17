@@ -41,9 +41,10 @@ gulp.task('bootstrap--var', function() {
 });
 
 gulp.task('bootstrap--js', function() {
-    return gulp.src('src/libs/bootstrap-sass/assets/javascripts/bootstrap.min.js')
+    return gulp.src('src/libs/jquery/dist/jquery.min.js')
                 .pipe(gulp.dest('src/js/'));
-})
+});
+
 
 // gulp.task('concat', function() {
 //     return gulp.src(['app/sass/base/*.sass', 'app/sass/layout/*.sass', 'app/sass/module/*.sass', 'app/sass/state/*.sass'])
@@ -89,7 +90,7 @@ gulp.task('bootstrap--js', function() {
 
 gulp.task('watch', ['pug', 'sass', 'browser-sync'], function() {
     gulp.watch('./src/pug/**/*.pug', ['pug']);
-    gulp.watch('src/*.html', browserSync.reload);
-    gulp.watch('src/sass/**/*.+(scss|sass)',['sass']);
-    gulp.watch('src/js/**/*.js', browserSync.reload);
+    gulp.watch('./src/*.html', browserSync.reload);
+    gulp.watch('./src/sass/**/*.+(scss|sass)',['sass']);
+    gulp.watch('./src/js/**/*.js', browserSync.reload);
 });

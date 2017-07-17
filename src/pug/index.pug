@@ -1,4 +1,87 @@
 doctype html
 html
 	head
-		title
+		title Wellmux Test
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="stylesheet" href="css/main.css")
+		//- link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+	body
+		header
+			.container
+				.navbar.navbar-default
+					.container-fluid
+						.navbar-header
+							button(type="button" data-toggle="collapse" data-target="#myNavbar").navbar-toggle
+								span.icon-bar
+								span.icon-bar
+								span.icon-bar
+							a(href="#").navbar-brand tinyone
+						#myNavbar.collapse.navbar-collapse 
+							ul.nav.navbar-nav.navbar-right
+								li
+									a(href="#") Feature
+								li
+									a(href="#") Support
+								li
+									a(href="#") Blog
+				#myCarousel.carousel.slide(data-ride="carousel")
+					ol.carousel-indicators
+						li(data-target="#myCarousel" data-slide-to="0").active
+						li(data-target="#myCarousel" data-slide-to="1")
+						li(data-target="#myCarousel" data-slide-to="2")
+					.carousel-inner
+						.item.active
+							.row
+								.col-lg-4.col-md-4.col-sm-8.col-md-offset-1.col-sm-offset-2.col-xs-10.col-xs-offset-1
+									.item--info
+										h2 Inspire your inspiration
+										h4 Simple to use for your app, products showcase and your inspirat
+										p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit 
+										ul.icons
+											li
+												i.fa.fa-apple.fa-4x
+											li
+												i.fa.fa-android.fa-4x
+											li
+												i.fa.fa-windows.fa-4x 
+								.col-lg-4.col-md-4.col-md-offset-2.hidden-sm.hidden-xs
+									.item--img
+										img(src="img/slide--img.png" alt="img")
+						.item
+							.row
+								.col-lg-4.col-md-4.col-sm-8.col-md-offset-1.col-sm-offset-2.col-xs-10.col-xs-offset-1
+									.item--info
+										h2 Inspire your inspiration
+										h4 Simple to use for your app, products showcase and your inspirat
+										p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit 
+										ul.icons
+											li
+												i.fa.fa-apple.fa-4x
+											li
+												i.fa.fa-android.fa-4x
+											li
+												i.fa.fa-windows.fa-4x 
+								.col-lg-4.col-md-4.col-md-offset-2.hidden-sm.hidden-xs
+									.item--img
+										img(src="img/slide--img.png" alt="img")
+						.item
+							.row
+								.col-lg-4.col-md-4.col-sm-8.col-md-offset-1.col-sm-offset-2.col-xs-10.col-xs-offset-1
+									.item--info
+										h2 Inspire your inspiration
+										h4 Simple to use for your app, products showcase and your inspirat
+										p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit 
+										ul.icons
+											li
+												i.fa.fa-apple.fa-4x
+											li
+												i.fa.fa-android.fa-4x
+											li
+												i.fa.fa-windows.fa-4x 
+								.col-lg-4.col-md-4.col-md-offset-2.hidden-sm.hidden-xs
+									.item--img
+										img(src="img/slide--img.png" alt="img")
+		script(src="js/jquery.min.js")
+		script(src="js/bootstrap.min.js")
+
