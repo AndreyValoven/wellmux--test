@@ -1,7 +1,6 @@
 @import variables
 
 @import ../libs/bootstrap-sass/assets/stylesheets/bootstrap 
-// @import ../libs/font-awesome/scss/font-awesome
 $footer: #fcdb00
 
 header
@@ -20,16 +19,20 @@ header
 		font-weight: bold
 		margin-left: 50px
 
-.item--info
-	margin-top: 25%
-	margin-bottom: 65%
-	h2 
-		
-		margin-bottom: 20px
-		font-size: 3rem
-		font-weight: bold
-	h4
-		margin-bottom: 20px
+.item
+	&--info
+		margin-top: 25%
+		margin-bottom: 65%
+		h2 
+			margin-bottom: 20px
+			font-size: 3rem
+			font-weight: bold
+		h4
+			margin-bottom: 20px
+	&--img
+		img
+			width: 100%
+			height: auto
 .icons
 	text-align: left
 	margin-left: -18%
@@ -85,9 +88,15 @@ footer
 		color: $footer
 .contact--info
 	margin-bottom: 8%
+	p 
+		margin-top: -4px
 .link--group
+	margin-bottom: 40px
 	a 
 		color: #d4d4d4
+		text-decoration: none
+		display: block
+		margin-bottom: 4px
 input
 	margin-top: 4%
 	&[type=text]
@@ -95,3 +104,15 @@ input
 	&[type=submit]
 		text-transform: uppercase
 		font-weight: bold
+		min-width: 62px
+@media screen and (max-width: 767px)
+	.item--info
+		margin-top: 8%
+		margin-bottom: 12%
+	#myNavbar
+		background-color: rgba(252, 252, 252, .8)
+		border-radius: 10%
+		li
+			border-bottom: 1px solid #848484
+			text-align: center
+			margin-left: 0
