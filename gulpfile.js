@@ -57,7 +57,7 @@ gulp.task('bootstrap--var', function() {
 });
 
 gulp.task('lib--js', function() {
-    return gulp.src(['src/libs/jquery/dist/jquery.slim.min.js','src/libs/bootstrap-sass/assets/javascripts/bootstrap/carousel.js','src/libs/bootstrap-sass/assets/javascripts/bootstrap/collapse.js'])
+    return gulp.src(['src/libs/jquery/dist/jquery.slim.min.js','src/libs/bootstrap-sass/assets/javascripts/bootstrap/carousel.js','src/libs/bootstrap-sass/assets/javascripts/bootstrap.js'])
                 .pipe(concat('libs.js'))
                 .pipe(gulp.dest('src/js/'));
 });
